@@ -72,7 +72,7 @@ exercise.deleteFirst = function() {
     var fruits = ['Banana', 'Pear', 'Orange', 'Mango'];
 
     // delete the first element of an array 'Banana'
-    fruits.splice(0);
+    fruits = fruits.splice(1);
 
     return fruits;
 };
