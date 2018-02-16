@@ -29,10 +29,7 @@ exercise.concatenate = function() {
 
     // contatenate list of words
     // assign contatenated text to "text" variable
-    for (i=0; i++; i<list.length){
-        text+=list[i];
-        text+=' ';
-    }
+    text=list.join();
 
     return text;
 };
@@ -43,9 +40,7 @@ exercise.addToEnd = function() {
     var fruits = ['Banana', 'Pear', 'Orange'];
 
     // add "Mango" to the end of the fruits array
-    // -------------------------------	
-    // ---------- Your Code ----------
-    // -------------------------------	
+    fruits.push("Mango");
 
     return fruits;
 };
@@ -55,9 +50,7 @@ exercise.addToBegin = function() {
     var fruits = ['Banana', 'Pear', 'Orange'];
 
     // add 'Mango' to the beginning of an array
-    // -------------------------------	
-    // ---------- Your Code ----------
-    // -------------------------------	
+    fruits.unshift("Mango");
 
     return fruits;
 };
@@ -67,9 +60,7 @@ exercise.deleteLast = function() {
     var fruits = ['Banana', 'Pear', 'Orange', 'Mango'];
 
     // delete the last element of an array 'Mango'
-    // -------------------------------	
-    // ---------- Your Code ----------
-    // -------------------------------	
+    fruits.pop();
 
     return fruits;
 };
@@ -79,9 +70,7 @@ exercise.deleteFirst = function() {
     var fruits = ['Banana', 'Pear', 'Orange', 'Mango'];
 
     // delete the first element of an array 'Banana'
-    // -------------------------------	
-    // ---------- Your Code ----------
-    // -------------------------------	
+    fruits.splice(1);
 
     return fruits;
 };
@@ -91,9 +80,7 @@ exercise.insert = function() {
     var fruits = ['Banana', 'Orange', 'Mango'];
 
     // insert an element 'Pear' after the first element 'Banana' in an array
-    // -------------------------------	
-    // ---------- Your Code ----------
-    // -------------------------------	
+    fruits.splice(1,0,'Pear');
 
     return fruits;
 };
