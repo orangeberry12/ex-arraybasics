@@ -29,7 +29,9 @@ exercise.concatenate = function() {
 
     // contatenate list of words
     // assign contatenated text to "text" variable
-    text=list.join();
+    for (i = 0; i++; i <list.length){
+        text = test + list[i] + list[' '];
+    }
 
     return text;
 };
