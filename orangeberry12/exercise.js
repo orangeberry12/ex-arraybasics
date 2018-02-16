@@ -5,9 +5,7 @@ exercise.change = function() {
     var fruits = ['Apple', 'Banana', 'Pear', 'Orange'];
 
     // change the first element 'Apple' to 'Mango'
-    // -------------------------------	
-    // ---------- Your Code ----------
-    // -------------------------------	
+    fruits[0] = 'Mango';
 
     return fruits;
 
@@ -20,9 +18,7 @@ exercise.length = function() {
 
     // get the length of the fruits array
     // assign length to "length" variable
-    // -------------------------------	
-    // ---------- Your Code ----------
-    // -------------------------------	
+    length = fruits.length;
 
     return length;
 };
@@ -33,9 +29,10 @@ exercise.concatenate = function() {
 
     // contatenate list of words
     // assign contatenated text to "text" variable
-    // -------------------------------	
-    // ---------- Your Code ----------
-    // -------------------------------	
+    for (i=0; i++; i<list.length){
+        text+=list[i];
+        text+=' ';
+    }
 
     return text;
 };
